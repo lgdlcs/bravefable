@@ -1,0 +1,25 @@
+:root { --ink: #15171F; --cream: #FAF6EF; --sand: #ECE3D6; --muted: #5E5A55; --line: rgba(21, 23, 31, .12); --amber: #F59A23; --cobalt: #1E3A8A; }
+* { box-sizing: border-box; margin: 0; }
+body { background: var(--cream); color: var(--ink); font: 400 1rem/1.6 "Geist", system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+.wrap { width: min(1160px, calc(100% - 32px)); margin: 0 auto; }
+.wrap--narrow { width: min(760px, calc(100% - 32px)); }
+.legal-head { padding: 1.2rem 0; border-bottom: 1px solid var(--line); }
+.legal-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
+.nav__brand { display: inline-flex; align-items: center; gap: .55rem; color: var(--ink); text-decoration: none; }
+.nav__mark { width: 26px; height: 26px; }
+.nav__word { font-family: "Fraunces", Georgia, serif; font-size: 1.15rem; }
+.back { font-size: .92rem; color: var(--ink); text-underline-offset: 4px; }
+.legal { padding: 3.5rem 0 5rem; }
+.legal h1 { font-family: "Fraunces", Georgia, serif; font-weight: 300; font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.05; letter-spacing: -.02em; }
+.legal .updated { margin-top: .5rem; color: var(--muted); font-size: .92rem; }
+.legal h2 { font-family: "Fraunces", Georgia, serif; font-weight: 400; font-size: 1.35rem; margin: 2.2rem 0 .6rem; }
+.legal p, .legal li { margin-top: .8rem; }
+.legal ul { padding-left: 1.3rem; }
+.legal a:not(.btn) { color: var(--cobalt); text-underline-offset: 3px; }
+.btn { display: inline-block; margin-top: 1.4rem; padding: .85rem 1.4rem; border-radius: 999px; font: 500 .82rem "Geist Mono", ui-monospace, monospace; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; }
+.btn--solid { background: var(--amber); color: var(--ink); }
+.footer { border-top: 1px solid var(--line); padding: 2rem 0; }
+.footer__inner { display: flex; flex-wrap: wrap; gap: 1rem 2rem; justify-content: space-between; }
+.footer__links { display: flex; flex-wrap: wrap; gap: 1.4rem; }
+.footer__links a { color: var(--ink); text-underline-offset: 4px; }
+.footer__copy { width: 100%; font-size: .85rem; color: var(--muted); }
